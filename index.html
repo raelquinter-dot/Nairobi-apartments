@@ -1,59 +1,236 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rongai & Nairobi Apartments - Homes for Rent</title>
+<title>Rongai & Nairobi Apartments - Homes for Rent in Ongata Rongai, Kiserian, Langata, Kitengela</title>
+<meta name="description" content="Find affordable 1 Bedroom, 2 Bedroom, Bedsitter apartments for rent in Ongata Rongai, Kiserian, Langata, Kitengela. Call or WhatsApp 0732613551">
 <style>
-body{font-family:Arial;margin:0;background:#f5f5f5}
-header{background:#0b5c2f;color:white;padding:20px;text-align:center}
-header h1{margin:0;font-size:24px}
-.box{background:white;margin:15px;padding:15px;border-radius:12px;box-shadow:0 2px 8px #0001}
-.box img{width:100%;border-radius:10px;height:180px;object-fit:cover}
-.price{color:#0b5c2f;font-weight:bold;font-size:18px}
-.btn{display:block;background:#25D366;color:white;text-align:center;padding:12px;border-radius:8px;text-decoration:none;margin-top:10px;font-weight:bold}
-.location{color:gray;font-size:14px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:#f5f5f5;color:#222;line-height:1.5}
+header{background:#0b5c2f;color:white;padding:22px 15px;text-align:center;position:sticky;top:0;z-index:99}
+header h1{font-size:26px;margin-bottom:5px}
+header p{font-size:14px;opacity:.9}
+.btn{display:inline-block;background:#25D366;color:white;padding:12px 20px;border-radius:25px;text-decoration:none;font-weight:bold;margin:8px 4px;text-align:center}
+.btn.white{background:white;color:#0b5c2f}
+.btn.dark{background:#0b5c2f;color:white}
+.hero{padding:20px 15px;background:white;text-align:center}
+.search{width:100%;padding:14px;border-radius:10px;border:2px solid #0b5c2f;margin:12px 0;font-size:16px}
+.filter{display:flex;gap:8px;overflow-x:auto;padding:10px 0}
+.filter button{white-space:nowrap;padding:8px 14px;border-radius:20px;border:1px solid #0b5c2f;background:white;color:#0b5c2f}
+.filter button.active{background:#0b5c2f;color:white}
+.grid{display:grid;grid-template-columns:1fr;gap:16px;padding:15px;max-width:1200px;margin:auto}
+@media(min-width:700px){.grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.grid{grid-template-columns:1fr 1fr 1fr}}
+.card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.card img{width:100%;height:210px;object-fit:cover}
+.card-body{padding:14px}
+.badge{display:inline-block;background:#e6f4ea;color:#0b5c2f;padding:4px 10px;border-radius:12px;font-size:12px;font-weight:bold;margin-bottom:6px}
+.location{color:#666;font-size:13px;margin:4px 0}
+.price{color:#0b5c2f;font-weight:bold;font-size:18px;margin:6px 0}
+.features{font-size:13px;color:#444;margin:8px 0}
+.callbox{display:flex;gap:8px;margin-top:10px}
+.callbox a{flex:1}
+.section{padding:22px 15px;background:white;margin:15px 0}
+.footer{background:#0b0b0b;color:#ccc;padding:25px 15px;text-align:center;font-size:13px}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:100}
+h2{font-size:22px;color:#0b5c2f;margin-bottom:12px;text-align:center}
 </style>
 </head>
 <body>
 <header>
 <h1>🏠 Rongai & Nairobi Apartments</h1>
-<p>Affordable Homes | Ongata Rongai | Kiserian | Langata</p>
-<a href="https://wa.me/254700000000" class="btn" style="background:white;color:#0b5c2f;max-width:200px;margin:15px auto">Chat on WhatsApp</a>
+<p>Affordable Homes | Ongata Rongai | Kiserian | Langata | Kitengela | Ngong</p>
+<a class="btn white" href="https://wa.me/254732613551?text=Hi, I'm looking for apartment in Rongai">💬 WhatsApp: 0732 613 551</a>
+<a class="btn" style="background:#0a3d1f" href="tel:0732613551">📞 Call Now</a>
 </header>
 
-<div class="box">
-<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267">
+<div class="hero">
+<h2>Find Your Next Home Today - 200+ Listings</h2>
+<input class="search" type="text" id="search" placeholder="Search: 1 Bedroom, 2 Bedroom, Rongai, Kiserian...">
+<div class="filter">
+<button class="active" onclick="filterA('all')">All</button>
+<button onclick="filterA('1 Bedroom')">1 Bedroom</button>
+<button onclick="filterA('2 Bedroom')">2 Bedroom</button>
+<button onclick="filterA('Bedsitter')">Bedsitter</button>
+<button onclick="filterA('3 Bedroom')">3 Bedroom</button>
+<button onclick="filterA('Rongai')">Rongai</button>
+<button onclick="filterA('Kiserian')">Kiserian</button>
+</div>
+</div>
+
+<div class="grid" id="grid">
+
+<div class="card" data-type="1 Bedroom Rongai">
+<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600">
+<div class="card-body">
+<span class="badge">NEW - VACANT NOW</span>
 <h3>1 Bedroom - Ongata Rongai, Maasai Mall Area</h3>
-<p class="location">📍 Near Tuskys, Rongai</p>
+<p class="location">📍 Near Tuskys, Rongai - 5 min to main stage</p>
 <p class="price">KSh 15,000 / month</p>
-<p>Water 24/7, Tiled, Parking, Secure</p>
-<a class="btn" href="https://wa.me/0732613551?text=Hi, I'm interested in 1 Bedroom Rongai 15k">WhatsApp Agent</a>
+<p class="features">✔ Water 24/7 ✔ Tiled ✔ Parking ✔ Secure ✔ Balcony ✔ Prepaid Tokens</p>
+<div class="callbox">
+<a class="btn dark" href="https://wa.me/254732613551?text=Hi, I'm interested in 1 Bedroom at Maasai Mall KSh 15000">WhatsApp</a>
+<a class="btn" href="tel:0732613551">Call</a>
+</div>
+</div>
 </div>
 
-<div class="box">
-<img src="https://images.unsplash.com/photo-1502672023488-70e25813eb80">
-<h3>Bedsitter - Rongai - Gataka Road</h3>
-<p class="location">📍 Gataka, 5 mins to main stage</p>
+<div class="card" data-type="2 Bedroom Rongai">
+<img src="https://images.unsplash.com/photo-1502672023488-70e25813eb80?w=600">
+<div class="card-body">
+<span class="badge">HOT DEAL</span>
+<h3>2 Bedroom - Rongai, Tumaini Area</h3>
+<p class="location">📍 Tumaini, Behind Tumaini Supermarket</p>
+<p class="price">KSh 22,000 / month</p>
+<p class="features">✔ Master Ensuite ✔ Spacious Kitchen ✔ Water + Security ✔ Near Road</p>
+<div class="callbox">
+<a class="btn dark" href="https://wa.me/254732613551?text=Hi, 2 Bedroom Tumaini KSh 22000">WhatsApp</a>
+<a class="btn" href="tel:0732613551">Call</a>
+</div>
+</div>
+</div>
+
+<div class="card" data-type="Bedsitter Rongai">
+<img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600">
+<div class="card-body">
+<span class="badge">STUDENT FRIENDLY</span>
+<h3>Bedsitter - Rongai, Near Multimedia University</h3>
+<p class="location">📍 3 min to MMU Gate</p>
 <p class="price">KSh 8,500 / month</p>
-<p>Spacious, Good Security, Water Available</p>
-<a class="btn" href="https://wa.me/254700000000?text=Hi, interested in Bedsitter Gataka 8500">WhatsApp Agent</a>
+<p class="features">✔ Ideal for Students ✔ Water ✔ WiFi Ready ✔ Secure</p>
+<div class="callbox">
+<a class="btn dark" href="https://wa.me/254732613551?text=Bedsitter near MMU KSh 8500">WhatsApp</a>
+<a class="btn" href="tel:0732613551">Call</a>
+</div>
+</div>
 </div>
 
-<div class="box">
-<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
-<h3>2 Bedroom - Kiserian</h3>
-<p class="location">📍 Kiserian Town</p>
+<div class="card" data-type="1 Bedroom Kiserian">
+<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600">
+<div class="card-body">
+<span class="badge">KISERIAN</span>
+<h3>1 Bedroom - Kiserian Town</h3>
+<p class="location">📍 Kiserian Town, Near Equity Bank</p>
+<p class="price">KSh 13,000 / month</p>
+<p class="features">✔ Newly Built ✔ Tiled ✔ Parking Available</p>
+<div class="callbox">
+<a class="btn dark" href="https://wa.me/254732613551?text=1 Bedroom Kiserian KSh 13000">WhatsApp</a>
+<a class="btn" href="tel:0732613551">Call</a>
+</div>
+</div>
+</div>
+
+<div class="card" data-type="2 Bedroom Kiserian">
+<img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600">
+<div class="card-body">
+<span class="badge">SPACIOUS</span>
+<h3>2 Bedroom - Kiserian, Pipeline Road</h3>
+<p class="location">📍 Pipeline Road, Quiet Area</p>
+<p class="price">KSh 18,500 / month</p>
+<p class="features">✔ 2 Balconies ✔ Water 24/7 ✔ Secure Compound</p>
+<div class="callbox">
+<a class="btn dark" href="https://wa.me/254732613551?text=2 Bedroom Pipeline Kiserian KSh 18500">WhatsApp</a>
+<a class="btn" href="tel:0732613551">Call</a>
+</div>
+</div>
+</div>
+
+<div class="card" data-type="1 Bedroom Langata">
+<img src="https://images.unsplash.com/photo-1493809842364-78817add58d1?w=600">
+<div class="card-body">
+<span class="badge">LANGATA</span>
+<h3>1 Bedroom - Langata, Near Carnivore</h3>
+<p class="location">📍 Langata Road, 2 min to bus stage</p>
+<p class="price">KSh 25,000 / month</p>
+<p class="features">✔ Modern Finishes ✔ Near Shopping Center ✔ Secure</p>
+<div class="callbox">
+<a class="btn dark" href="https://wa.me/254732613551?text=1 Bedroom Langata KSh 25000">WhatsApp</a>
+<a class="btn" href="tel:0732613551">Call</a>
+</div>
+</div>
+</div>
+
+<div class="card" data-type="Bedsitter Rongai">
+<img src="https://images.unsplash.com/photo-1522708314320-bd0d0a05b5c6?w=600">
+<div class="card-body">
+<span class="badge">BUDGET</span>
+<h3>Bedsitter - Ongata Rongai, Merisho Road</h3>
+<p class="location">📍 Merisho, Near Merisho Stage</p>
+<p class="price">KSh 7,000 / month</p>
+<p class="features">✔ Affordable ✔ Water ✔ Secure</p>
+<div class="callbox">
+<a class="btn dark" href="https://wa.me/254732613551?text=Bedsitter Merisho KSh 7000">WhatsApp</a>
+<a class="btn" href="tel:0732613551">Call</a>
+</div>
+</div>
+</div>
+
+<div class="card" data-type="3 Bedroom Rongai">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600">
+<div class="card-body">
+<span class="badge">FAMILY HOME</span>
+<h3>3 Bedroom - Rongai, Laiser Hill Area</h3>
+<p class="location">📍 Laiser Hill, Quiet Estate</p>
+<p class="price">KSh 35,000 / month</p>
+<p class="features">✔ Master Ensuite ✔ Garden ✔ Parking 2 Cars ✔ Gated</p>
+<div class="callbox">
+<a class="btn dark" href="https://wa.me/254732613551?text=3 Bedroom Laiser Hill KSh 35000">WhatsApp</a>
+<a class="btn" href="tel:0732613551">Call</a>
+</div>
+</div>
+</div>
+
+<div class="card" data-type="2 Bedroom Kitengela">
+<img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600">
+<div class="card-body">
+<span class="badge">KITENGELA</span>
+<h3>2 Bedroom - Kitengela, Near Yukos</h3>
+<p class="location">📍 Kitengela, Yukos Area</p>
 <p class="price">KSh 20,000 / month</p>
-<p>Master Ensuite, Balcony, Parking</p>
-<a class="btn" href="https://wa.me/254700000000?text=Hi, interested in 2 Bedroom Kiserian">WhatsApp Agent</a>
+<p class="features">✔ Spacious ✔ Water ✔ Near Tarmac ✔ Secure</p>
+<div class="callbox">
+<a class="btn dark" href="https://wa.me/254732613551?text=2 Bedroom Kitengela KSh 20000">WhatsApp</a>
+<a class="btn" href="tel:0732613551">Call</a>
+</div>
+</div>
 </div>
 
-<div class="box" style="text-align:center">
-<h3>📞 Contact Us</h3>
-<p>Call: 0700 000 000</p>
-<p>Location: Ongata Rongai, Magadi Road</p>
-<p>We help you find house in Rongai, Kiserian, Langata, Kitengela</p>
 </div>
 
+<div class="section">
+<h2>Why Choose Us?</h2>
+<p style="text-align:center;max-width:800px;margin:auto">We help 1000+ people monthly find affordable homes in Rongai, Kiserian, Langata, Kitengela, Ngong. No agency fees on some houses! Verified houses, real photos, direct landlord connection. Call/WhatsApp 0732 613 551 today.</p>
+<br>
+<center><a class="btn dark" href="https://wa.me/254732613551?text=Hi, help me find house in Rongai">📲 WhatsApp Us Now</a></center>
+</div>
+
+<div class="section" style="background:#eef7f0">
+<h2>Areas We Cover</h2>
+<p style="text-align:center">Ongata Rongai - Maasai Mall - Tumaini - Merisho - Laiser Hill - Kiserian - Pipeline - Kisamis - Langata - Bomas - Kitengela - Yukos - EPZ - Ngong - Matasia</p>
+</div>
+
+<div class="footer">
+<p><b>Rongai & Nairobi Apartments</b><br>0732 613 551 | raelquinter-dot<br>Ongata Rongai, Kajiado County, Kenya<br><br>© 2026 - Find your next home with us</p>
+</div>
+
+<a class="whatsapp-float" href="https://wa.me/254732613551">💬</a>
+
+<script>
+function filterA(t){
+ document.querySelectorAll('.filter button').forEach(b=>b.classList.remove('active'));
+ event.target.classList.add('active');
+ document.querySelectorAll('.card').forEach(c=>{
+  if(t==='all' || c.dataset.type.toLowerCase().includes(t.toLowerCase())) c.style.display='block';
+  else c.style.display='none';
+ });
+}
+document.getElementById('search').addEventListener('input', function(e){
+ let q=e.target.value.toLowerCase();
+ document.querySelectorAll('.card').forEach(c=>{
+  c.style.display = c.innerText.toLowerCase().includes(q) ? 'block' : 'none';
+ });
+});
+</script>
 </body>
-</html>
+  </html>

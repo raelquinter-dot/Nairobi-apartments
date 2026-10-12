@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rongai & Nairobi Apartments - Homes for Rent</title>
+<style>
+body{font-family:Arial;margin:0;background:#f5f5f5}
+header{background:#0b5c2f;color:white;padding:20px;text-align:center}
+header h1{margin:0;font-size:24px}
+.box{background:white;margin:15px;padding:15px;border-radius:12px;box-shadow:0 2px 8px #0001}
+.box img{width:100%;border-radius:10px;height:180px;object-fit:cover}
+.price{color:#0b5c2f;font-weight:bold;font-size:18px}
+.btn{display:block;background:#25D366;color:white;text-align:center;padding:12px;border-radius:8px;text-decoration:none;margin-top:10px;font-weight:bold}
+.location{color:gray;font-size:14px}
+</style>
+</head>
+<body>
+<header>
+<h1>🏠 Rongai & Nairobi Apartments</h1>
+<p>Affordable Homes | Ongata Rongai | Kiserian | Langata</p>
+<a href="https://wa.me/254700000000" class="btn" style="background:white;color:#0b5c2f;max-width:200px;margin:15px auto">Chat on WhatsApp</a>
+</header>
+
+<div class="box">
+<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267">
+<h3>1 Bedroom - Ongata Rongai, Maasai Mall Area</h3>
+<p class="location">📍 Near Tuskys, Rongai</p>
+<p class="price">KSh 15,000 / month</p>
+<p>Water 24/7, Tiled, Parking, Secure</p>
+<a class="btn" href="https://wa.me/254700000000?text=Hi, I'm interested in 1 Bedroom Rongai 15k">WhatsApp Agent</a>
+</div>
+
+<div class="box">
+<img src="https://images.unsplash.com/photo-1502672023488-70e25813eb80">
+<h3>Bedsitter - Rongai - Gataka Road</h3>
+<p class="location">📍 Gataka, 5 mins to main stage</p>
+<p class="price">KSh 8,500 / month</p>
+<p>Spacious, Good Security, Water Available</p>
+<a class="btn" href="https://wa.me/254700000000?text=Hi, interested in Bedsitter Gataka 8500">WhatsApp Agent</a>
+</div>
+
+<div class="box">
+<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+<h3>2 Bedroom - Kiserian</h3>
+<p class="location">📍 Kiserian Town</p>
+<p class="price">KSh 20,000 / month</p>
+<p>Master Ensuite, Balcony, Parking</p>
+<a class="btn" href="https://wa.me/254700000000?text=Hi, interested in 2 Bedroom Kiserian">WhatsApp Agent</a>
+</div>
+
+<div class="box" style="text-align:center">
+<h3>📞 Contact Us</h3>
+<p>Call: 0700 000 000</p>
+<p>Location: Ongata Rongai, Magadi Road</p>
+<p>We help you find house in Rongai, Kiserian, Langata, Kitengela</p>
+</div>
+
+</body>
+</html>
